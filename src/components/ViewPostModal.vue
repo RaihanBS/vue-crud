@@ -22,7 +22,7 @@
                     v-for="category in currentPost.categories"
                     :key="category.id"
                   >
-                    {{ category.name }}
+                    {{ category }}
                   </span>
                 </h3>
               </div>
@@ -107,10 +107,6 @@ export default {
   text-align: left;
   padding-left: 10px;
   font-display: block;
-}
-
-.second-content {
-  width: 100%;
 }
 
 .second-content h3 {

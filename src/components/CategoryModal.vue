@@ -3,7 +3,7 @@
     <transition name="modal">
       <div class="modal-mask">
         <div class="modal-wrapper">
-          <div class="modal-container">
+          <div class="category-modal-container">
             <div class="modal-header">
               <h3>CREATE CATEGORY</h3>
             </div>
@@ -97,8 +97,8 @@ export default {
   vertical-align: middle;
 }
 
-.modal-container {
-  width: 700px;
+.category-modal-container {
+  width: 300px;
   margin: 0px auto;
   background-color: #fff;
   border-radius: 2px;
@@ -135,8 +135,8 @@ export default {
   opacity: 0;
 }
 
-.modal-enter .modal-container,
-.modal-leave-active .modal-container {
+.modal-enter .category-modal-container,
+.modal-leave-active .category-modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }

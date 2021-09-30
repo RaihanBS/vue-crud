@@ -22,13 +22,15 @@
       <div>{{ post.title }}</div>
       <div>
         <span>
-          <button @click="viewPost(post)">View</button>
+          <button @click="viewPost(post)" class="post-item-button">View</button>
         </span>
         <span>
-          <button @click="editPost(post)">Edit</button>
+          <button @click="editPost(post)" class="post-item-button">Edit</button>
         </span>
         <span>
-          <button @click="deletePost(post)">Delete</button>
+          <button @click="deletePost(post)" class="post-item-button">
+            Delete
+          </button>
         </span>
       </div>
     </div>
@@ -115,6 +117,11 @@ export default {
 .post-button {
   background-color: orange;
   padding: 10px;
+  border-radius: 10px;
+}
+
+.post-item-button {
+  background-color: orange;
   border-radius: 10px;
 }
 

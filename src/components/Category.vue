@@ -28,10 +28,17 @@
       <div>{{ category.name }}</div>
       <div>
         <span>
-          <button @click="editCategory(category)">Edit</button>
+          <button @click="editCategory(category)" class="category-item-button">
+            Edit
+          </button>
         </span>
         <span>
-          <button @click="deleteCategory(category)">Delete</button>
+          <button
+            @click="deleteCategory(category)"
+            class="category-item-button"
+          >
+            Delete
+          </button>
         </span>
       </div>
     </div>
@@ -125,5 +132,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.category-item-button {
+  background-color: orange;
+  border-radius: 10px;
 }
 </style>

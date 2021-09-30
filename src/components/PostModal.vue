@@ -3,7 +3,7 @@
     <transition name="modal">
       <div class="modal-mask">
         <div class="modal-wrapper">
-          <div class="modal-container">
+          <div class="post-modal-container">
             <div class="modal-header">
               <h3>{{ creating ? "CREATE POST" : "UPDATE POST" }}</h3>
             </div>
@@ -23,7 +23,7 @@
 
                 <div>
                   <label for="category">Add Category</label>
-                  <select v-model="category" id="category">
+                  <select multiple v-model="category" id="category">
                     <!-- <option>
                       <button>+CREATE NEW CATEGORY</button>
                     </option> -->
@@ -141,7 +141,7 @@ export default {
   vertical-align: middle;
 }
 
-.modal-container {
+.post-modal-container {
   width: 700px;
   margin: 0px auto;
   background-color: #fff;
@@ -192,8 +192,8 @@ export default {
   opacity: 0;
 }
 
-.modal-enter .modal-container,
-.modal-leave-active .modal-container {
+.modal-enter .post-modal-container,
+.modal-leave-active .post-modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
