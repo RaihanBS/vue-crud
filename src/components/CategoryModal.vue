@@ -73,6 +73,8 @@ export default {
     currentCategory() {
       if (!this.creating) {
         this.name = this.currentCategory.name;
+      } else {
+        this.name = "";
       }
     }
   }
